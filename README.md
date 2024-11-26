@@ -90,6 +90,20 @@ npm run dev
 5. **Open your browser**
 Navigate to `http://localhost:3000`
 
+## 📸 Screenshots
+
+<div align="center">
+  <img src="baker.png" alt="screenshot" width="800px">
+</div>
+
+<div align="center">
+  <img src="baker1.png" alt="screenshot1" width="800px">
+</div>
+
+<div align="center">
+  <img src="baker2.png" alt="screenshot1" width="800px">
+</div>
+
 ## 💫 AI Models & Styles
 
 ### Logo Styles
