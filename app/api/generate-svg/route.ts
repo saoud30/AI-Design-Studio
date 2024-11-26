@@ -6,7 +6,7 @@ export async function POST(req: Request) {
   try {
     const { prompt } = await req.json();
 
-    if (!process.env.NEXT_PUBLIC_HUGGINGFACE_API_KEY) {
+    if (!process.env.HUGGINGFACE_API_KEY) {
       throw new Error('HuggingFace API key is not configured');
     }
 
@@ -16,7 +16,7 @@ export async function POST(req: Request) {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          Authorization: `Bearer ${process.env.NEXT_PUBLIC_HUGGINGFACE_API_KEY}`,
+          Authorization: `Bearer ${process.env.HUGGINGFACE_API_KEY}`,
         },
         body: JSON.stringify({
           inputs: prompt,
